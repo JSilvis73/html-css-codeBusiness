@@ -7,7 +7,20 @@ html{
 font-size: 16px;
 margin-top: 3em;
 }
+
+header,
+main,
+footer{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1, h2, h3{
+color:orangered;
+}
+
 body{
+
     font-size: small;
 }
 
@@ -23,6 +36,7 @@ header span{
     font-size: 1.5em;
     color: #999999;
 }
+
 
 
 nav{
@@ -45,4 +59,44 @@ text-decoration: none;
 
 nav a:hover{
     color: violet;
+}
+
+section{
+    margin: 1em 0;
+    padding-top: 3em;
+    min-height: 20em;
+}
+
+section > p{
+    margin: 1em;
+}
+
+#products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1em;
+    
+}
+
+#products article{
+margin: 5px;
+padding: 1em;
+background-color: lightgray;
+}
+
+#products article img{
+    width: 100%;
+    
+}
+
+footer{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background: #666666;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 1em;
 }
